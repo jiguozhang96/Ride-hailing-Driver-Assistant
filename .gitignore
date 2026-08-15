@@ -24,5 +24,6 @@ __pycache__/
 scripts/new_cities_out.txt
 scripts/poi-db.backup.js
 *.log
+*.zip
 .DS_Store
 Thumbs.db
