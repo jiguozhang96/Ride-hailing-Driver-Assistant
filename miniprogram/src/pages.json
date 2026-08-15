@@ -1,0 +1,24 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "网约车跑单规划助手" } },
+    { "path": "pages/daily/daily", "style": { "navigationBarTitleText": "今日规划" } },
+    { "path": "pages/heatmap/heatmap", "style": { "navigationBarTitleText": "商圈热力" } },
+    { "path": "pages/me/me", "style": { "navigationBarTitleText": "我的" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "网约车跑单规划助手",
+    "navigationBarBackgroundColor": "#f7f9fc",
+    "backgroundColor": "#f7f9fc"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#2b6ef3",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/daily/daily", "text": "规划" },
+      { "pagePath": "pages/heatmap/heatmap", "text": "热力" },
+      { "pagePath": "pages/me/me", "text": "我的" }
+    ]
+  }
+}

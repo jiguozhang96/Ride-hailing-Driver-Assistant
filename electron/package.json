@@ -1,0 +1,40 @@
+{
+  "name": "taxi-planner",
+  "version": "2.0.0",
+  "description": "网约车跑单规划助手（本地桌面版）",
+  "main": "main.js",
+  "author": "taxi-planner",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable",
+    "build:dir": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.taxi.planner",
+    "productName": "网约车跑单规划助手",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "config.json",
+      "proxy-server.js",
+      { "from": "../app", "to": "app" }
+    ],
+    "win": {
+      "target": ["portable"],
+      "icon": null,
+      "sign": false,
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

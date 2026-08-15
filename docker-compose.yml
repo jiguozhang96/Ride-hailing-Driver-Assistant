@@ -1,0 +1,24 @@
+# 网约车跑单规划助手 —— Docker Compose
+# 适用于：云服务器 / NAS（群晖、威联通、飞牛 fnOS 等支持 Docker 的设备）
+#
+# 飞牛 fnOS 部署：
+#   1. 打开 fnOS「Docker」应用 → 「Compose」→ 新建项目
+#   2. 在同目录创建 .env 文件，填入你的 key（参考 .env.example）
+#   3. 启动后浏览器访问 http://<NAS-IP>:3000
+#
+# 密钥说明：QW_HOST/QW_KEY/AMAP_WS_KEY 只存在服务端环境变量（.env），前端不可见（隐藏 key）。
+
+version: '3'
+
+services:
+  taxi-planner:
+    build: .
+    container_name: taxi-planner
+    ports:
+      - "3000:3000"
+    environment:
+      - QW_HOST=${QW_HOST:-}
+      - QW_KEY=${QW_KEY:-}
+      - AMAP_WS_KEY=${AMAP_WS_KEY:-}
+      - PORT=3000
+    restart: unless-stopped

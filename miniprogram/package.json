@@ -1,0 +1,21 @@
+{
+  "name": "taxi-planner-miniprogram",
+  "version": "2.0.0",
+  "description": "网约车跑单规划助手（uni-app，编译到微信小程序/H5/App）",
+  "scripts": {
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build -p h5",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4020420240722002",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4020420240722002",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.0",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4020420240722002",
+    "vite": "^5.0.0"
+  }
+}

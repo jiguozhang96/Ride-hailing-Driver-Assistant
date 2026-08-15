@@ -1,0 +1,28 @@
+# ── 依赖与构建产物 ──────────────────────────
+node_modules/
+electron/node_modules/
+electron/dist/
+android/android/
+android/node_modules/
+miniprogram/node_modules/
+miniprogram/dist/
+miniprogram/src/.hbuilderx/
+dist/
+
+# ── 密钥与本地配置（绝不提交） ─────────────
+.env
+electron/config.json
+electron/proxy-server.js
+
+# ── 工作记忆与缓存（含开发日志，不提交） ──
+.workbuddy/
+__pycache__/
+*.pyc
+
+# ── 临时文件 ──────────────────────────────
+.playwright-cli/
+scripts/new_cities_out.txt
+scripts/poi-db.backup.js
+*.log
+.DS_Store
+Thumbs.db

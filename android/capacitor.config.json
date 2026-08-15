@@ -1,0 +1,8 @@
+{
+  "appId": "com.taxi.planner",
+  "appName": "网约车跑单规划助手",
+  "webDir": "../app",
+  "server": {
+    "androidScheme": "https"
+  }
+}
