@@ -1,6 +1,16 @@
 # 网约车跑单规划助手（V2 · 12 城市 · 多端）
+# Ride-hailing Driver Assistant
 
 司机自用的行程规划工具：输入车辆/出车信息，生成**日度/周度跑单路线规划** + **商圈热力指数可视化**。
+
+> A self-hosted trip planning tool for ride-hailing drivers: generates daily/weekly route plans with commercial-district heat visualization across 12 Chinese cities. Pure frontend + optional Node backend; deployable as H5 / Docker / Electron / mini-program.
+
+## 使用说明
+
+1. **启动应用**：任选下方「快速开始」中的一种方式（Docker / Node / 双击 `启动服务.bat`），浏览器打开对应地址。
+2. **填写信息**：首页选择城市 → 输入住宿地址（自动定位）→ 选择车辆/车牌/续航 → 设置出车时间 → 点「生成跑单规划」。
+3. **查看规划**：日度规划（半小时粒度最优路线）、周度规划（7 天主题策略）、商圈热力地图（气泡图 + 热力排行）。
+4. **（可选）配置 key**：未配置 key 也能完整使用（离线示意）；配置高德「Web端 JS API」key 后解锁在线地图/实时 POI/天气。详见「密钥安全」与 `docs/03`。
 
 ## 交付物清单
 
