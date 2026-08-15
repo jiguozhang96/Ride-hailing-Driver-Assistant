@@ -13,6 +13,7 @@
 | `docs/05-架构V2与部署方案.md` | **V2 架构 + 多端部署 + 开源引用** |
 | `docs/06-飞牛NAS部署.md` | 飞牛 fnOS 镜像导入/Compose 部署 |
 | `docs/07-商圈数据更新维护.md` | 商圈数据一键更新维护指南 |
+| `docs/08-GitHub开源发布.md` | GitHub 开源发布 + 密钥脱敏说明 |
 | `app/` | 成品程序（纯前端 H5，无构建） |
 | `server.js` / `proxy-server.js` | 后端代理（隐藏 REST key） |
 | `Dockerfile` / `docker-compose.yml` | Docker 部署（含飞牛 NAS） |
